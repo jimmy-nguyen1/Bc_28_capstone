@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* header */
+
+.header {
+    position: relative;
+    z-index: 100;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.header .navbar-brand i {
+    color: #dc4f72;
+    font-size: 30px;
+}
+
+.header .navbar-brand span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #dc4f72;
+}
+
+#navbarSupportedContent .nav-item {
+    margin: 0 10px;
+}
+
+#navbarSupportedContent .nav-item .nav-link {
+    transition: all 0.5s;
+}
+
+#navbarSupportedContent .nav-item:hover .nav-link {
+    color: #dc4f72;
+}
+
+#navbarSupportedContent .nav-item::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #dc4f72;
+    display: block;
+    transition: all 0.5s;
+    margin-left: 8px;
+}
+
+#navbarSupportedContent .nav-item:hover::after {
+    width: 30%;
+}
+
+#navbarSupportedContent .nav-item.active .nav-link {
+    color: #dc4f72;
+}
+
+.btn__header {
+    border-color: #dc4f72;
+    color: #dc4f72;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btn__header:hover {
+    background-color: #dc4f72;
+    border: 0px solid #dc4f72;
+}
+
+
+/* carousel */
+
+.carousel {
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+.carousel__box {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel__left h1 {
+    font-size: 50px;
+    font-weight: 550;
+    width: 75%
+}
+
+.carousel__left p {
+    font-size: 20px;
+    width: 64%;
+    opacity: 0.7;
+}
+
+.carousel__left button {
+    border-color: #dc4f72;
+    color: #dc4f72;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+
+.carousel__left button:hover {
+    background-color: #dc4f72;
+    border: 0px solid #dc4f72;
+}
+
+.carousel__right img {
+    transform: rotate(180deg);
+}
+
+
+/* project */
+
+.project__box {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.project__top span {
+    color: #dc4f72;
+    font-weight: 600;
+}
+
+.project__top h1 {
+    font-weight: 600;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.project__top p {
+    width: 65%;
+    margin-left: 18%;
+    margin-top: 2%;
+    opacity: 0.7;
+}
+
+.project__list {
+    display: flex;
+    gap: 30px;
+}
+
+.project__item {
+    background-color: #f7f9fc;
+    border-radius: 10px;
+}
+
+.project__item img {
+    margin: 50px 0 20px;
+}
+
+.project__item p {
+    margin: 0 20px 50px;
+}
