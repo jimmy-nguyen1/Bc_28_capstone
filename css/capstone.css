@@ -150,11 +150,6 @@ body {
     opacity: 0.7;
 }
 
-.project__list {
-    display: flex;
-    gap: 30px;
-}
-
 .project__item {
     background-color: #f7f9fc;
     border-radius: 10px;
@@ -166,4 +161,35 @@ body {
 
 .project__item p {
     margin: 0 20px 50px;
+}
+
+
+/* feature */
+
+.feature {
+    background-color: #f7f9fc;
+    padding: 50px 0;
+}
+
+.feature__left h6 {
+    color: #dc4f72;
+    font-weight: bold;
+}
+
+.feature__left h2 {
+    font-weight: bold;
+}
+
+.feature__left button {
+    background-color: #dc4f72;
+    padding: 15px 25px;
+    border: 1px solid #dc4f72;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.feature__right img {
+    width: 500px;
+    box-shadow: ;
+    border-radius: 5px;
 }
