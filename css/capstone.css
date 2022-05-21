@@ -423,7 +423,25 @@ body {
     width: 470px;
 }
 
-overflow
+.card-header {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.card-header button {
+    text-decoration: none!important;
+    color: black;
+}
+
+.card-header button:hover {
+    color: black;
+}
+
+.card-h2 {
+    font-size: 3rem;
+}
+
+
 /* experience */
 
 .experience__box {
@@ -442,6 +460,26 @@ overflow
 
 .experience__right img {
     width: 555px;
+}
+
+
+/* buy */
+
+.buy__box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.buy__content h1 {
+    width: 60%;
+    margin-left: 21%;
+}
+
+.buy__content p {
+    width: 65%;
+    margin-left: 17%;
 }
 
 
