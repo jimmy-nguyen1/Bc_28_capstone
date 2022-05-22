@@ -423,9 +423,21 @@ body {
     width: 470px;
 }
 
+.card-header button {
+    background: #fff;
+    border: none;
+    padding-right: 20px;
+}
+
 .card-header {
     background-color: #fff;
     border-bottom: none;
+}
+
+.card-header i {
+    position: absolute;
+    right: 25px;
+    top: 17px;
 }
 
 .card-header button {
@@ -435,6 +447,16 @@ body {
 
 .card-header button:hover {
     color: black;
+}
+
+.card-body {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    transform: translateY(10px);
+    transition: all 0.5s;
+}
+
+.collapse .card-body {
+    transform: translateY(0px);
 }
 
 .card-h2 {
