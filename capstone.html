@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone</title>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
@@ -365,6 +368,7 @@
                 <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="experience__bot">
+
                 <nav class="nav justify-content-center">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Project One</a>
@@ -372,7 +376,7 @@
                         <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Project Three</a>
                     </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content experience__content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row experience__item">
                             <div class="experience__left col-5">
@@ -423,7 +427,31 @@
 
     <!-- service -->
     <section class="service">
-        <div class="">
+        <div class="service__box">
+            <div class="service__top">
+                <h6>OUR CLIENTS TESTIMONIALS
+                </h6>
+                <h1>What People Say
+                </h1>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="service__bot">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <h4>1</h4>
+                    </div>
+                    <div class="item">
+                        <h4>2</h4>
+                    </div>
+                    <div class="item">
+                        <h4>3</h4>
+                    </div>
+                    <div class="item">
+                        <h4>4</h4>
+                    </div>
+
+                </div>
+            </div>
             <i class="fas fa-quote-left"></i>
         </div>
     </section>
@@ -564,6 +592,28 @@
     <script>
         $('.counter').countUp();
     </script>
+    <!-- owl carousel -->
+    <script src="./js/owl.carousel.js">
+    </script>
+    <script src="./js/owl.carousel.min.js">
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+
 </body>
 
 </html>

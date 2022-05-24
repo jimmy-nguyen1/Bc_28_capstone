@@ -452,7 +452,7 @@ body {
 .card-body {
     padding: 0 1.25rem 1.25rem 1.25rem;
     transform: translateY(10px);
-    transition: all 0.5s;
+    transition: all 0.1s;
 }
 
 .collapse .card-body {
@@ -467,6 +467,7 @@ body {
 /* experience */
 
 .experience__box {
+    padding: 50px 0;
     width: 80%;
     margin: 0 auto;
 }
@@ -482,6 +483,21 @@ body {
 
 .experience__right img {
     width: 555px;
+}
+
+.experience__content {
+    padding-top: 30px;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: none;
+    border: none;
+    color: black;
+}
+
+.nav-tabs .active {
+    border-bottom: #dc4f72 solid 1px!important;
+    color: #dc4f72!important;
 }
 
 
