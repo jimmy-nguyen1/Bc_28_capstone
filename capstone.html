@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./css/capstone.css">
 </head>
 
-<body>
+<body class="dark-theme ">
+
     <!-- head -->
     <header class="header ">
         <div class="header__nav ">
@@ -55,7 +56,8 @@
                         </li>
                     </ul>
 
-                    <button class="btn btn-outline-success my-2 my-sm-0 btn__header" type="submit">Schedule a Demo</button>
+                    <button class="btn my-2 my-sm-0 btn__header" type="submit">Schedule a Demo</button>
+                    <button class="btn-toggle">Toggle Dark Mode</button>
                 </div>
             </nav>
         </div>
@@ -67,7 +69,7 @@
             <div class="carousel__left">
                 <h1>We Execute Our Ideas From Start to Finish</h1>
                 <p>Building a beautiful interactive business for startups and innovative companies.</p>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <button class="btn  my-2 my-sm-0" type="submit">
                     GET STARTED
                 </button>
             </div>
@@ -88,23 +90,29 @@
                 <div class="project__list row">
                     <div class="col-xl-4">
                         <div class="project__item">
-                            <img src="./img/s1 (1).png" alt="">
-                            <h3>Interactive</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat, modi ipsum sed alias deleniti repudiandae quasi iusto?</p>
+                            <a href="">
+                                <img src="./img/s1 (1).png" alt="">
+                                <h3>Interactive</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                            </a>
                         </div>
                     </div>
                     <div class="col-xl-4">
                         <div class="project__item">
-                            <img src="./img/s2.png" alt="">
-                            <h3>Interactive</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat, modi ipsum sed alias deleniti repudiandae quasi iusto?</p>
+                            <a href="">
+                                <img src="./img/s2.png" alt="">
+                                <h3>Interactive</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                            </a>
                         </div>
                     </div>
                     <div class="col-xl-4">
                         <div class="project__item">
-                            <img src="./img/s3.png" alt="">
-                            <h3>Interactive</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat, modi ipsum sed alias deleniti repudiandae quasi iusto?</p>
+                            <a href="">
+                                <img src="./img/s3.png" alt="">
+                                <h3>Interactive</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -379,14 +387,14 @@
                 <div class="tab-content experience__content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row experience__item">
-                            <div class="experience__left col-5">
+                            <div class="experience__left col-6">
                                 <h2>Why a visual identity system is more memorable</h2>
                                 <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
                                     pariatur.
                                 </p>
-                                <button>KNOW MORE</button>
+                                <button class="btn btn-outline-primary  mt-3">KNOW MORE</button>
                             </div>
-                            <div class="experience__right">
+                            <div class="experience__right col-5">
                                 <img src="./img/b4.jpg" alt="">
                             </div>
                         </div>
@@ -396,23 +404,23 @@
                             <div class="experience__right">
                                 <img src="./img/b5.jpg" alt="">
                             </div>
-                            <div class="experience__left col-5">
+                            <div class="experience__left col-6">
                                 <h2>Why a visual identity system is more memorable</h2>
                                 <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
                                     pariatur.
                                 </p>
-                                <button>KNOW MORE</button>
+                                <button class="btn btn-outline-primary  mt-3">KNOW MORE</button>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="row experience__item">
-                            <div class="experience__left col-5">
+                            <div class="experience__left col-6">
                                 <h2>Why a visual identity system is more memorable</h2>
                                 <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
                                     pariatur.
                                 </p>
-                                <button>KNOW MORE</button>
+                                <button class="btn btn-outline-primary  mt-3">KNOW MORE</button>
                             </div>
                             <div class="experience__right">
                                 <img src="./img/b6.jpg" alt="">
@@ -627,7 +635,10 @@
             </div>
         </div>
     </footer>
-
+    <!-- back to top -->
+    <a href=" " class="backtotop cd-top text-replace js-cd-top ">
+        <i class="fa fa-arrow-up "></i>
+    </a>
 
 
     <!-- script -->
@@ -660,7 +671,20 @@
             }
         })
     </script>
+    <!-- back to top -->
+    <script src="./js/main_backToTop.js ">
+    </script>
+    <script src="./js/util.js ">
+    </script>
+    <script>
+        const btn = document.querySelector('.btn-toggle');
 
+        // Lắng nghe sự kiện click vào button
+        btn.addEventListener('click', function() {
+            // Thêm hoặc xóa class dark-theme ở body
+            document.body.classList.toggle('dark-theme');
+        })
+    </script>
 </body>
 
 </html>
