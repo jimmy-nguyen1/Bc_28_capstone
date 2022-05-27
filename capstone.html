@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="./css/capstone.css">
 </head>
 
-<body class="dark-theme ">
-
+<body class="dark-theme">
     <!-- head -->
     <header class="header ">
         <div class="header__nav ">
@@ -33,9 +32,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
@@ -57,7 +56,12 @@
                     </ul>
 
                     <button class="btn my-2 my-sm-0 btn__header" type="submit">Schedule a Demo</button>
-                    <button class="btn-toggle">Toggle Dark Mode</button>
+
+                    <button class="" id="btn-toggle">
+                        <i class="far fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+
                 </div>
             </nav>
         </div>
@@ -67,8 +71,8 @@
     <section class="carousel">
         <div class="carousel__box ">
             <div class="carousel__left">
-                <h1>We Execute Our Ideas From Start to Finish</h1>
-                <p>Building a beautiful interactive business for startups and innovative companies.</p>
+                <h1 class="title">We Execute Our Ideas From Start to Finish</h1>
+                <p class="text">Building a beautiful interactive business for startups and innovative companies.</p>
                 <button class="btn  my-2 my-sm-0" type="submit">
                     GET STARTED
                 </button>
@@ -83,8 +87,8 @@
         <div class="project__box ">
             <div class="project__top">
                 <span>WHY CHOOSE US</span>
-                <h1>Tools for business startup to professional</h1>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                <h1 class="title">Tools for business startup to professional</h1>
+                <p class="text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="project__bot">
                 <div class="project__list row">
@@ -126,8 +130,8 @@
                 <div class="col-5">
                     <div class="feature__left">
                         <h6>ABOUT OUR COMPANY</h6>
-                        <h2>The Best Choice For Your Successful Business!</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea
+                        <h1 class="title">The Best Choice For Your Successful Business!</h1>
+                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea
                             fuga facere voluptatem.</p>
                         <button class="">READ MORE</button>
                     </div>
@@ -191,8 +195,8 @@
         <div class="card__box">
             <div class="card__top">
                 <h6>WE ARE HERE FOR YOU</h6>
-                <h1>Explore Solutions</h1>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                <h1 class="title">Explore Solutions</h1>
+                <p class="text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="card__bot ">
                 <div class="card__list row">
@@ -372,8 +376,8 @@
         <div class="experience__box">
             <div class="experience__top">
                 <h6>FEATURED CASES</h6>
-                <h1>Completed Projects</h1>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                <h1 class="title">Completed Projects</h1>
+                <p class="text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="experience__bot">
 
@@ -514,8 +518,8 @@
     <section class="buy">
         <div class="buy__box">
             <div class="buy__content">
-                <h1>Ready to build your own brand community?</h1>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                <h1 class="title">Ready to build your own brand community?</h1>
+                <p class="text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="buy__button">
                 <button type="button" class="btn btn1 btn-lg ">Book a demo</button>
@@ -676,11 +680,11 @@
     </script>
     <script src="./js/util.js ">
     </script>
-    <script>
-        const btn = document.querySelector('.btn-toggle');
 
+    <!-- dark mode -->
+    <script>
+        const btn = document.querySelector('#btn-toggle');
         btn.addEventListener('click', function() {
-           
             document.body.classList.toggle('dark-theme');
         })
     </script>
